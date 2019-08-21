@@ -4,6 +4,7 @@ Test
 
 - Sources include: Robot simulated packages and main control node in Qt gui
 - Video demos of GUI
+- Tested in Ubuntu 16.4 and ROS Kinetic
 
 - Clone
 
@@ -17,6 +18,7 @@ git clone https://github.com/andrespalomino/pizza_test.git
 - Compile
 
 ```
+$ rosdep install -y --from-paths . --ignore-src --rosdistro kinetic
 $ cd ~/pizza_ws 	
 $ catkin_make
 $ source devel/setup.bash

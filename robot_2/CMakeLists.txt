@@ -138,7 +138,7 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/robot_2_node.cpp)
 
 add_executable(R2 src/robot_2_node.cpp)
-
+add_dependencies(R2 pizza_msgs_generate_messages_cpp)
 
 
 ## Rename C++ executable without prefix

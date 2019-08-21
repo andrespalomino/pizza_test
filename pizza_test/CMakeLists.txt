@@ -51,6 +51,7 @@ file(GLOB_RECURSE QT_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINK
 ##############################################################################
 
 add_executable(pizza_test ${QT_SOURCES} ${QT_RESOURCES_CPP} ${QT_FORMS_HPP} ${QT_MOC_HPP})
+add_dependencies(pizza_test pizza_msgs_generate_messages_cpp)
 target_link_libraries(pizza_test ${QT_LIBRARIES} ${catkin_LIBRARIES})
 install(TARGETS pizza_test RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
