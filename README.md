@@ -14,6 +14,11 @@ cd ~/pizza_ws/src/
 git clone https://github.com/andrespalomino/pizza_test.git
 
 ```
+- Catkin 
+
+```
+sudo apt-get install ros-kinetic-catkin python-catkin-tools
+```
 
 - Compile
 
